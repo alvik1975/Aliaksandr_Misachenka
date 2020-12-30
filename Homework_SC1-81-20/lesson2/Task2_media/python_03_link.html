@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>python_03_link.html</title>
+
+    <style>
+        hr {
+         border: none; /* Убираем границу */
+         background-color: rgb(165, 161, 161); /* Цвет линии */
+         color:rgb(165, 161, 161); /* Цвет линии для IE6-7 */
+         height: 2px; /* Толщина линии */
+        }
+    
+        .rightpic {
+         float: right; /* Выравнивание по правому краю */
+         margin: 0 0 5px 5px; /* Отступы вокруг фотографии */
+        }
+    
+        .rightpic {
+         float: right; /* Выравнивание по правому краю */
+         margin: 0 0 5px 5px; /* Отступы вокруг фотографии */
+        }
+        
+        .centerpic {
+         margin: 0 0 5px 5px; /* Отступы вокруг фотографии */
+        }
+
+        .leftpic {
+         float: left; /* Выравнивание по левому краю */
+         margin: 0 0 5px 5px; /* Отступы вокруг фотографии */
+        }
+    
+    </style>
+</head>
+<body>
+    <p><a name="Spisok"></a></p>
+
+    <p><img src="/Users/aliaksandrmisachenka/Documents/GitHub/Aliaksandr_Misachenka/Homework_SC1-81-20/lesson2/Task2_media/Icon-Python.png"
+            class="rightpic"></p>
+    
+
+    <h1><font size="10">HOW-TO: Программа на Python, Часть 3</font></h1>
+    <ul><i>
+        <li> <a href="python_01_link.html">Программа на Python — часть 1</a></li> 
+        <li> <a href="python_02_link.html">Программа на Python — часть 2</a></li> 
+        <li> Программа на Python — часть 3</li>
+    </i></ul> 
+
+    <h1>Содержание</h1>
+    <h1><font size="5">HOW-TO: Программа на Python, Часть 3</font></h1>   
+    <Ul><U>
+        <li><a href="#S1">Модули</a></li> 
+        <li><a href="#S2">Функции</a></li>
+    </U></Ul>
+ 
+    <hr>
+
+    <p> 
+        В прошлый раз мы изучали списки, подстановку переменных, комментарии, сравнение и
+        присвоение, операторы <b>if</b> и <b>while</b>>. Я обещал, что в этой части мы изучим модули и
+        функции. Давайте начнём.
+    </p>
+
+    <p><a name="S1"></a></p>   
+    <h1>Модули</h1>
+    <p><a href="#Spisok">К содержанию</a></p> 
+    
+
+    </p>
+        Модули предлагают способ расширить программирование на Python. Вы можете создать
+        свои модули, использовать те, которые поставляются с Python или которые написали
+        другие. В самом Python есть сотни модулей, которые облегчают написание программ.
+        Список модулей, поставляемых с Python, находится по адресу:<br>
+        <a href="https://www.opennet.ru/docs/RUS/python/index.html" target="_blank">http://docs.python.org/modindex.html</a>. Некоторые модули предназначены для определённых
+        операционных систем, но большинство из них кроссплатформенные и работают
+        одинаково на <a href="https://ru.wikipedia.org/wiki/Linux" target="_blank">Linux</a>, 
+        <a href="https://ru.wikipedia.org/wiki/Mac_OS" target="_blank">Mac</a> и 
+        <a href="https://ru.wikipedia.org/wiki/Windows" target="_blank">Windows</a>. 
+        Для использования внешнего модуля
+        необходимо импортировать его в программу. Один из модулей, поставляемых с Python,
+        называется «random». Он даёт возможность генерировать псевдослучайные числа. Мы
+        используем этот модуль в нашем первом примере.<br><br>
+        
+        <font size="2" face="courier new"> 
+        #=======================================<br>
+        # random_example.py<br>
+        # Module example using the random module<br>
+        #=======================================<br>
+        import random<br>
+        # print 14 random integers<br>
+        for cntr in range(1,15):<br>
+        print random.randint(1,10)<br>
+        </font>
+
+        <br>Давайте разберём код по строкам. Первые четыре строки — это комментарии, о которых
+        мы говорили в прошлый раз. Пятая строка говорит Python, что нужно использовать
+        модуль «random». Мы должны явно указать Python на это.
+    </p>
+    
+    <hr>
+    <p><a name="S2"></a></p>  
+    <h1>Функции</h1>
+    <p><a href="#Spisok">К содержанию</a></p> 
+     
+
+    <p>    
+        Когда мы импортировали модуль random, мы использовали функцию <b>randint()</b>. Функция
+        — это блок кода, который создан для того, чтобы вызывать его в программе, обычно,
+        более одного раза. Это упрощает работу над программой и предотвращает набор одного и
+        того же кода снова и снова. Грубо говоря, если вам нужно написать некоторый код
+        больше, чем 1-2 раза, стоит сделать его функцией. Хотя следующие два примера очень
+        простые, это хорошие примеры функций. Теперь мы хотим, скажем, взять два числа,
+        сложить их, перемножить, вычесть одно из другого, затем вывести на экран эти числа и
+        результаты одновременно. Допустим, нам нужно сделать это три раза для трёх наборов
+        чисел. Тогда наш пример будет выглядеть как код ниже.<br><br>
+
+        <font size="2" face="courier new"> 
+        #silly example<br>
+        print '%d + %d = %d ' % (1,2,1+2)<br>
+        print '%d * %d = %d ' % (1,2,1*2)<br>
+        print '%d - %d = %d ' % (1,2,1-2)<br>
+        print '\n'<br>
+        print '%d + %d = %d ' % (1,4,1+4)<br>
+        print '%d * %d = %d ' % (1,4,1*4)<br>
+        print '%d - %d = %d ' % (1,4,1-4)<br>
+        print '\n'<br>
+        print '%d + %d = %d ' % (10,5,10+5)<br>
+        print '%d * %d = %d ' % (10,5,10*5)<br>
+        print '%d - %d = %d ' % (10,5,10-5)<br>
+        print '\n'<br>
+        </font>
+
+        <br><br>Здесь нужно не только набрать много текста, но и непременно возникнут ошибки как при
+        написании, так и при внесении изменений. Вместо этого мы создадим функцию, которую
+        назовём <i><b>«DoTwo»</b></i>. Она будет каждый раз брать два числа, проводить математические
+        операции и выводить результат. Начнём с ключевого слова <i><b>«def»</b></i>, которое сигнализирует
+        о том, что мы собираемся определить функцию. После слова <i><b>«def»</b></i> добавим название
+        функции и список параметров, если таковые имеются, в круглых скобках. Эту строку
+        необходимо завершить двоеточием. Код функции набирается с отступом. Наш
+        улучшенный простой пример (<u>No2</u>) показан ниже.<br><br>
+        
+        <font size="2" face="courier new"> 
+        #silly example 2...still silly, but better<br>
+        def DoTwo(num1,num2):<br>
+        print '%d + %d = %d ' % (num1,num2,num1+num2)<br>
+        print '%d * %d = %d ' % (num1,num2,num1*num2)<br>
+        print '%d - %d = %d ' % (num1,num2,num1-num2)<br>
+        print '\n'<br>
+        DoTwo(1,2)<br>
+        DoTwo(1,4)<br>
+        DoTwo(10,5)<br>
+        </font>
+
+        <br>Как видите, здесь написано меньше кода — 8 строк вместо 12. Если нам нужно будет что-
+        либо поменять в функции, мы сможем сделать это, не создавая проблем для нашей
+        программы. Чтобы вызвать функцию, нужно написать её имя и параметры.
+    </p>
+
+<!-- Низ страницы -->
+<div align="middle">
+    <a href="python_02_link.html" title="ВЛЕВО"><img src="/Users/aliaksandrmisachenka/Documents/GitHub/Aliaksandr_Misachenka/Homework_SC1-81-20/lesson2/Task2_media/prev.png"
+    class="leftpic" alt="На предыдущую"></a>
+    <a href="index.html" title="ДОМОЙ"><img src="/Users/aliaksandrmisachenka/Documents/GitHub/Aliaksandr_Misachenka/Homework_SC1-81-20/lesson2/Task2_media/home.png"
+    class="centerpic" alt="На главную"></a>
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+    <p><a name="Spisok"></a></p> 
+    <H2>Горизонтальное меню</H2>
+    <!-- <p><a href="#Spisok">К содержанию</a></p> -->
+    <p> <a href="#Spisok">Главная</a>&nbsp; | &nbsp;<a href="#Spisok">Каталог</a>&nbsp; | &nbsp;<a href="#Spisok">Акции</a>&nbsp; | &nbsp;<a href="#Spisok">О нас</a></p>
+   
+    <!-- -------------------------------------------------------------------   -->
+    <H2>Меню список</H2>
+
+    <ul><i>
+        <li><a href="#Spisok">Главная</a></li>
+        <li><a href="#Spisok">Каталог</a></li> 
+        <li><a href="#Spisok">Акции</a></li> 
+        <li><a href="#Spisok">О нас</a></li>
+     </i></ul> 
+
+    <!-- -------------------------------------------------------------------   -->
+    <h2>Меню с вложенным списком</h2>
+    <ul>
+        <li><a href="#Spisok">Главная</a>
+            <ul>
+                <li><a href="#Spisok">Новости</a></li>
+            </ul>    
+        </li>
+
+        <li><a href="#Spisok">Каталог</a>
+            <ul>
+                <li><a href="#Spisok">Осень-Зима</a></li>
+                <li><a href="#Spisok">Весна-Лето</a></li>
+            </ul>    
+        </li>
+
+        <li><a href="#Spisok">Акции </a>
+            <ul>
+                <li><a href="#Spisok">Актуальные</a></li>
+                <li><a href="#Spisok">Прошедшие</a></li>
+            </ul>    
+        </li>
+
+        <li><a href="#Spisok">О нас</a>
+            <ul>
+                <li><a href="#Spisok">Контакты</a></li>
+                <li><a href="#Spisok">Проезд</a></li>
+            </ul>    
+        </li>
+
+    </ul>
+   <!--
+    <ul>
+        <li><a href="#">Пункт 1</a>
+           <ul>
+               <li><a href="#">Пункт 1</a></li>
+               <li><a href="#">Пункт 2</a></li>
+           </ul>
+        </li>
+        <li><a href="#">Пункт 2</a></li>
+        <li><a href="#">Пункт 3</a></li>
+      </ul>
+      -->
+    
+<!-- -------------------------------------------------------------------   -->
+
+<table border="1">  
+<CAPTION><br>ВАРИАНТ 1</CAPTION>
+    <TR>
+        <TH style="background: #fcb891" colspan="2">Главная</TH>
+    </TR>
+    <TR>
+        <td colspan="2">Новости</td>
+    </TR>
+    <TR>
+        <TH style="background: #fcb891" colspan="2">Каталог</TH>
+    </TR>
+    <TR>
+        <TD>Осень-Зима</TD>
+        <TD>Весна-Лето</TD>
+    </TR>
+
+    <TR>
+        <TH style="background: #fcb891" colspan="2">Акции</TH>
+    </TR>
+    <TR>
+        <TD>Актуальные</TD>
+        <TD>Прошедшие</TD>
+    </TR>
+    <TR>
+        <TH style="background: #fcb891"colspan="2">О нас</TH>
+    </TR>
+    <TR>
+        <TD>Контакты</TD>
+        <TD>Проезд</TD>
+    </TR>
+
+    <br>
+
+</table>      
+
+
+<table  width="400" border="1" align="center">
+    <col width="150" valign="top" >
+    <col width="250" valign="top">  
+<CAPTION align="top"><br>ВАРИАНТ 2 </CAPTION>
+    <TR>
+        <TH style="background: #eafac0" colspan="2">Главная</TH>
+    </TR>
+    <TR>
+        <td colspan="2">Новости</td>
+    </TR>
+    <TR>
+        <TH style="background: #eafac0" colspan="2">Каталог</TH>
+    </TR>
+    <TR>
+        <TD>Осень-Зима</TD><td><br></td>
+    </tr>
+    <tr>    
+        <TD>Весна-Лето</TD><td><br></td>    
+    </TR>
+
+    <TR>
+        <TH style="background: #eafac0" colspan="2">Акции</TH>
+    </TR>
+    <TR>
+        <TD>Актуальные</TD><td><br></td>
+    </TR>
+    <tr>    
+        <TD>Прошедшие</TD><td><br></td>
+    </TR>
+    <TR>
+        <TH style="background: #eafac0" colspan="2">О нас</TH>
+    </TR>
+    <TR>
+        <TD>Контакты</TD><td><br></td>
+    </TR>
+    <tr>
+        <TD>Проезд</TD><td><br></td>
+    </TR>
+
+</table>     
+
+
+<table  width="300" border="1">
+    <col width="150" valign="top" >
+    <col width="150" valign="top">  
+    <CAPTION><br>ВАРИАНТ 3</CAPTION>
+    <TR>
+        <TH style="background: #acd0fa" >Главная</TH><td align="center">Новости</td>
+    </TR>
+    
+    <TR>
+        <TH style="background: #acd0fa" rowspan="2">Каталог</TH><TD  align="center">Осень-Зима</TD>
+    </TR>
+    
+    <tr>    
+        <TD align="center">Весна-Лето</TD>   
+    </TR>
+
+    <TR>
+        <TH style="background: #acd0fa" rowspan="2">Акции</TH> <TD align="center">Актуальные</TD>
+    </TR>
+    <tr>    
+        <TD align="center">Прошедшие</TD>
+    </TR>
+
+    <tr>
+        <th style="background: #acd0fa" rowspan="2">О нас</th> <td align="center">Контакты</td>
+    </tr>
+    <tr>
+        <td align="center">Проезд</td>
+    </tr>
+
+</table>     
+
+    <h4 <font align="middle"><a href="index.html">На главную</a></font></h2></li>
+
+</body>
+</html>
