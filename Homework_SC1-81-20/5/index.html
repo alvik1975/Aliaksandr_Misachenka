@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<Table>
+    <tr>
+        <TH align="left" width="700">Простая форма поиска с вариантами:</TH>
+        <TH align="left" width="700">Простая форма поиска с вариантами с автофокусом:</TH>
+    </tr>
+<tr>    
+<!-- Простая форма поиска с вариантами-->
+         
+    <td width="700">  
+    
+    <form id="poisk1" method="post" action="http://fe.it-academy.by/TestForm.php" target="_ablank">  
+        <fieldset>
+        <legend>"Строка поиска"</legend>
+        <p>
+            <input type="text" name="str_poisk1" maxlength="10" alt="Отправить форму на сервер">
+            <input type="submit" value="Искать"> <br>
+            <input type="radio" name="radio1" value="На сайте" checked> На сайте 
+            <input type="radio" name="radio1" value="В google"> В google<br>
+        </p>
+        </fieldset>
+    </form> 
+    </td>
+<!-- Простая форма поиска с вариантами автофокус-->
+    <td width="700">    
+    <form id="poisk2" method="post" action="http://fe.it-academy.by/TestForm.php" target="_ablank">  
+        <fieldset>
+        <legend>"Строка поиска"</legend>
+        <p>
+            <input type="text" name="str_poisk2" maxlength="10" alt="Отправить форму на сервер" autofocus required><font color="red"><sup>*</sup></font>
+            <input type="submit" value="Искать"> <br>
+            <input type="radio" name="radio2" value="На сайте"> На сайте 
+            <input type="radio" name="radio2" value="В google" checked> В google<br>
+            <i>* - обязательное поле </i>
+        </p>
+        </fieldset>
+    </form> 
+    </td>
+</tr>
+
+<tr>
+    <TH align="left" width="700">Простая форма авторизации:</TH>
+    <TH align="left" width="700">Опрос (голосование):</TH>
+</tr>
+
+
+<tr>
+<!-- Простая форма авторизации-->
+    <td width="700">    
+    <form id="poisk3" method="post" action="http://fe.it-academy.by/TestForm.php" target="_ablank">  
+        <fieldset>
+        <legend>"Авторизуйтесь"</legend>
+        <p>
+            <input type="text" name="str_poisk3_login" autofocus required><font color="red"><sup>*</sup></font>Логин<br>
+            <input type="text" name="str_poisk3_pass" autofocus required><font color="red"><sup>*</sup></font>Пароль<br>
+            <input type="checkbox" name="checkbox3"> Оставаться в системе <br> 
+            <input type="submit" value="Войти"><br>
+            <i>* - обязательное поле </i>
+        </p>
+        </fieldset>
+    </form> 
+    </td>
+<!-- Опрос (голосование) -->
+<td width="700">    
+    <form id="poisk4" method="post" action="http://fe.it-academy.by/TestForm.php" target="_ablank">  
+        <fieldset>
+        <legend>"Как вам?"</legend>
+        <p>
+            <input type="radio" name="radio4" value="Ничего" checked>Ничего <br>
+            <input type="radio" name="radio4" value="Неплохо" >Неплохо <br>
+            <input type="radio" name="radio4" value="Хорошо" >Хорошо <br>
+            <input type="radio" name="radio4" value="Супер" >Супер <br>
+            <input type="hidden" name="date" value="2013/12/31">
+            <input type="submit" value="Отправить"><br>
+
+        </p>
+        </fieldset>
+    </form> 
+    </td>
+</tr>
+<tr>
+    <TH align="left" width="700">Отзыв:</TH>
+    <TH align="left" width="700">Выпадающий и мульти списки:</TH>
+</tr>
+
+<tr>
+    <!-- Отзыв -->
+        <td width="700">    
+        <form id="poisk5" method="post" action="http://fe.it-academy.by/TestForm.php" target="_ablank">  
+            <fieldset>
+            <legend>"Авторизуйтесь"</legend>
+            <p>
+                <input type="text" name="str_5_name" autofocus required><font color="red"><sup>*</sup></font>Имя<br>
+                <input type="email" name="str_5_email" autofocus required><font color="red"><sup>*</sup></font>e-mail<br>
+                <textarea name="poisk5" cols="30" rows="10" placeholder="Форма отправки"></textarea><br> 
+                <input type="submit" value="Войти"><br>
+                <i>* - обязательное поле </i>
+            </p>
+            </fieldset>
+        </form> 
+        </td>
+<!-- выпадающий и мультисписки-->
+<td width="700">    
+    <form id="poisk6" method="post" action="http://fe.it-academy.by/TestForm.php" target="_ablank">
+        <fieldset>
+        <legend>"Города РБ"</legend>
+        <p>
+            <select name="Select6_1">
+                <option value="Брест">Брест</option>
+                <option value="Витебск">Витебск</option>
+                <option value="Гродно">Гродно</option>
+                <option value="Гомель">Гомель</option>
+                <option value="Могилев">Могилев</option>
+                <option value="Минск">Минск</option>
+            </select>
+            <select name="Select6_2" size="8">
+                <optgroup label="Города Беларуси"></optgroup>
+                <option value="Брест">Брест</option>
+                <option value="Витебск">Витебск</option>
+                <option value="Гродно">Гродно</option>
+                <option value="Гомель">Гомель</option>
+                <option value="Могилев">Могилев</option>
+                <option value="Минск">Минск</option>
+                <optgroup label="Города России"></optgroup>
+                <option value="Москва">Москва</option>
+                <option value="Вязьма">Вязьма</option>
+                <option value="Смоленск">Смоленск</option>
+            </select>
+
+            <input type="submit" value="ОК"><br>
+         
+        </p>
+        </fieldset>
+    </form> 
+    </td>
+</tr>
+<tr>
+        <TH align="left" width="700">Загрузка файла на сервер:</TH>
+        <TH align="left" width="700">Валидация данных HTML5:</TH>
+</tr>
+<tr>
+    <!-- загрузка файла на сервер
+     Почему если указать enctype="multipart/form-data" в поле <form ...>
+     как указано в http://htmlbook.ru/samhtml5/formy/zagruzka-failov
+     не передает наименования файлов методом POST
+     передает только через <input type="file" ...>
+     -->
+
+    <td width="700">    
+        <form id="poisk7" method="post" action="http://fe.it-academy.by/TestForm.php" target="_ablank">
+            <fieldset>
+            <legend>"Upload"</legend>
+            <p>
+                <input type="file" name="choose_file7[]" enctype="multipart/form-data" multiple required>
+                <font color="red"><sup>*</sup></font><br>
+                Срок хранения (года):<br>
+                <input type="number" size="2" min="1" max="99" name="how_mach_7" value="0">
+                <input type="submit" value="Загрузить"><br>
+                <i>* - обязательное поле </i>
+            </p>
+            </fieldset>
+        </form> 
+    </td>
+    <!-- Валидация данных HTML5     -->
+    <td width="700">
+        <form id="poisk8" method="post" action="http://fe.it-academy.by/TestForm.php" target="_ablank">
+            <fieldset>
+                <legend>"Строка поиска"</legend>
+                <p>
+                    Введите фамилию (<i>Только русские буквы</i>)<br>
+                    <input type="text" name="name_8" pattern="^[А-Яа-яЁё\s]+$" required><br>
+                    Введите телефонный номер в формате<br>
+                    +ХХХ-ХХ-ХХХХХХХ (Х-любое число)<br>
+                    <input type="tel" name="phone_number8" pattern="[+]{1}[0-9]{3}-[0-9]{2}-[0-9]{7}"
+                           required value="+"><br>
+                    <input type="submit" value="Проверить"><br>
+                </p>
+            </fieldset>
+        </form>
+    </td>
+
+</tr>
+
+</Table> 
+</body>
+</html>

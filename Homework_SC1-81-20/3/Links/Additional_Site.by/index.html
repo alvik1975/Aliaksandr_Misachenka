@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu</title>
+    </head>
+
+    <body>
+            <H2>Горизонтальное меню</H2>
+            <p> <a href="index.html">Главная</a>&nbsp; | &nbsp;<a href="catalog.html">Каталог</a>&nbsp; | &nbsp;<a href="promo.html">Акции</a>&nbsp; | &nbsp;<a href="contacts.html">О нас</a></p>
+
+            <!-- -------------------------------------------------------------------   -->
+            <H2>Меню список</H2>
+
+            <ul><i>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="promo.html">Акции</a></li>
+                <li><a href="contacts.html">О нас</a></li>
+             </i></ul>
+
+            <!-- -------------------------------------------------------------------   -->
+            <h2>Меню с вложенным списком</h2>
+            <ul>
+                <li><a href="index.html">Главная</a>
+                    <ul>
+                        <li><a href="News/news.html">Новости</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="catalog.html">Каталог</a>
+                    <ul>
+                        <li><a href="Catalog/a-w.html">Осень-Зима</a></li>
+                        <li><a href="Catalog/s-s.html">Весна-Лето</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="promo.html">Акции</a>
+                    <ul>
+                        <li><a href="Promo/last.html">Актуальные</a></li>
+                        <li><a href="Promo/old.html">Прошедшие</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="about.html">О нас</a>
+                    <ul>
+                        <li><a href="About/contacts.html">Контакты</a></li>
+                        <li><a href="About/scheme.html">Проезд</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        <h2>Меню таблица с вложенными таблицами</h2>
+            <table  width="300" border="1">
+            <col width="150" valign="top" >
+            <col width="150" valign="top">
+            <CAPTION><br>ВАРИАНТ 3</CAPTION>
+            <TR>
+                <TH><a href="index.html">Главная</a></TH><td align="center"><a href="News/news.html">Новости</a></td>
+            </TR>
+
+            <TR>
+                <TH rowspan="2"><a href="catalog.html">Каталог</a></TH>
+                <TD  align="center"><a href="Catalog/a-w.html">Осень-Зима</a></TD>
+            </TR>
+
+            <tr>
+                <TD align="center"><a href="Catalog/s-s.html">Весна-Лето</a></TD>
+            </TR>
+
+            <TR>
+                <TH rowspan="2"><a href="promo.html">Акции</a></TH>
+                <TD align="center"><a href="Promo/last.html">Актуальные</a></TD>
+            </TR>
+            <tr>
+                <TD align="center"><a href="Promo/old.html">Прошедшие</a></TD>
+            </TR>
+
+            <tr>
+                <th rowspan="2"><a href="about.html">О нас</a></th>
+                <td align="center"><a href="About/contacts.html">Контакты</a></td>
+            </tr>
+            <tr>
+                <td align="center"><a href="About/scheme.html">Проезд</a></td>
+            </tr>
+
+        </table>
+
+    </body>
+</html>
