@@ -1,0 +1,25 @@
+/* Делаем рамку для элемента P  */
+p   {
+border: 1px solid lightgrey; /*  рисуем рамку вокруг элемента */
+padding: 5px ;         /*  задаем отступ от текста */
+border-top-right-radius: 15px;
+border-bottom-left-radius: 15px;
+}
+/* Добавляем картинку к элементам а начинающихся на https  */
+a[href^="https"]::before { content: url('pic/extref.png'); margin-right: 5px}
+
+/* Добавляем картинку  в зависимости от расширения файла  */
+p a[href="files/document.doc"]:after, li a[href="files/document.doc"]:hover:after
+{ content: url('pic/logo-doc.jpg'); margin-left: 10px}
+
+p a[href="files/document.pdf"]:after, li a[href="files/document.pdf"]:hover:after
+{ content: url('pic/logo-pdf.png'); margin-left: 10px}
+
+p a[href="files/document.zip"]:after, li a[href="files/document.zip"]:hover:after
+{ content: url('pic/logo-zip.gif'); margin-left: 10px}
+
+/* прячем стандартный маркер и меняем картинку у тега li  */
+ul { list-style: none;}
+li::before { content: url('pic/logo-list.jpg');}
+
+

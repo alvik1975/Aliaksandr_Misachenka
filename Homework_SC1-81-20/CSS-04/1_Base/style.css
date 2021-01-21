@@ -1,0 +1,55 @@
+/* Делаем рамку для элемента P  */
+p   {
+border: 1px solid lightgrey; /*  рисуем рамку вокруг элемента */
+padding: 5px ;         /*  задаем отступ от текста */
+border-top-right-radius: 15px;
+border-bottom-left-radius: 15px;
+}
+/* Добавляем картинку к элементам а начинающихся на https  */
+a[href^="https"] {
+background: url('pic/extref.png') no-repeat 0 5px;
+padding-left: 13px;
+}
+/* Добавляем картинку  в зависимости от расширения файла  */
+p a[href="files/document.doc"]
+{
+background: url('pic/logo-doc.jpg') no-repeat 140px; /*  задаем смещение*/
+padding-right: 30px;  /* увеличиваем отступ от правого края строки*/
+}
+
+p a[href="files/document.pdf"]
+{
+background: url('pic/logo-pdf.png') no-repeat 110px; /*  задаем смещение*/
+padding-right: 30px;  /* увеличиваем отступ от правого края строки*/
+}
+
+p a[href="files/document.zip"]
+{
+background: url('pic/logo-zip.gif') no-repeat 50px; /*  задаем смещение*/
+padding-right: 30px;  /* увеличиваем отступ от правого края строки*/
+}
+/* меняем картинку у тега li  */
+li
+{
+list-style-image: url('pic/logo-list.jpg'); /* Путь к изображению маркера */
+
+}
+
+/* Добавляем картинку при наведении мышкой */
+li a:hover[href="files/document.doc"]
+{
+background: url('pic/logo-doc.jpg') no-repeat 140px; /*  задаем смещение*/
+padding-right: 30px;  /* увеличиваем отступ от правого края строки*/
+}
+
+li a:hover[href="files/document.pdf"]
+{
+background: url('pic/logo-pdf.png') no-repeat 110px; /*  задаем смещение*/
+padding-right: 30px;  /* увеличиваем отступ от правого края строки*/
+}
+
+li a:hover[href="files/document.zip"]
+{
+background: url('pic/logo-zip.gif') no-repeat 50px; /*  задаем смещение*/
+padding-right: 30px;  /* увеличиваем отступ от правого края строки*/
+}

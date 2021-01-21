@@ -1,0 +1,67 @@
+
+
+/* ----------   ДЕЛАЕМ ВЕРТИКАЛЬНОЕ МЕНЮ ------------------*/
+/*-- Заголовок меню  */
+li {
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    color: black;
+    background: lightgrey;
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem; /* отступ равный размеру шрифта*/
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s; /* задержка перехода между пунктами меню*/
+}
+
+/* Выпадающее меню */
+ul li ul {
+    visibility: hidden;
+    width: 150px; /*  Ширина выпадающего меню */
+    position: absolute; /*  выпадать вниз элемента */
+    margin-top: -1rem; /*  Отступ от текста на 1 ширину шрифта */
+    left: 184px; /*  отступ слева */
+    /*display: none; /*свойство, которое определяет, как элемент должен быть показан в документе */
+    opacity: 0; /* прозрачность элемента */
+        }
+
+/* Убрать все стилевые свойства у меню (например подчеркивание)*/
+a   {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    }
+/* Стелевое свойство выпадающего меню*/
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    }
+/*Задаем цвет шрифта меню*/
+li a {
+    color: black;
+     }
+/*Определяем когда курсор находится на пункте меню*/
+li:hover {
+    background: darkgrey;
+    cursor: pointer;
+        }
+li:active { font-size: x-large; }
+/*  Включает выпадающее меню  */
+ul li:hover > ul, ul li ul:hover
+    {
+    visibility: visible;
+    opacity: 1;
+    transition: 3s;  /*появление меню за 3 секунды*/
+    }
+
+ul li ul li
+    {
+    clear: both;
+    width: 100%;
+    }
+

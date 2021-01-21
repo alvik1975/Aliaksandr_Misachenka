@@ -1,0 +1,30 @@
+/* ----------   ДЕЛАЕМ  ГОРИЗОНТАЛЬНОЕ МЕНЮ ------------------*/
+@media screen and (min-width: 1304px)
+{
+    /*-- Заголовок меню  */
+    li {
+        width: 150px;
+        border: 1px solid black;
+        border-radius: 10px;
+
+        color: black;
+        background: lightgrey;
+        display: block;
+        float: left;
+        padding: 1rem; /* отступ равный размеру шрифта*/
+        position: relative;
+        text-decoration: none;
+        transition-duration: 0.5s; /* задержка перехода между пунктами меню*/
+    }
+
+    /* Выпадающее меню */
+    ul li ul {
+        visibility: hidden;
+        width: 150px; /*  Ширина выпадающего меню */
+        position: absolute; /*  выпадать вниз элемента */
+        margin-top: 1rem; /*  Отступ от текста на 1 ширину шрифта */
+        left: 0; /*  отступ слева */
+        /*display: none; /* свойство, которое определяет, как элемент должен быть показан в документе */
+    }
+
+}
