@@ -1,0 +1,25 @@
+table  {
+    border: 1px dotted black;
+    border-collapse: collapse;
+}
+
+th, td  {
+    border: 1px dotted black;
+}
+caption
+{
+    caption-side: bottom;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+tr:nth-child(2n+1)
+{
+    background-color: lightgrey;
+}
+tr:nth-child(1)
+{
+    background-color: gray;
+    color: white;
+}
+
+

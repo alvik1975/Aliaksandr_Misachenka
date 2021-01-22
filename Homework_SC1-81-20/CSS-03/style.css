@@ -49,6 +49,7 @@ li a {
 li:hover {
     background: darkgrey;
     cursor: pointer;
+
         }
 li:active { font-size: x-large; }
 /*  Включает выпадающее меню  */
@@ -57,6 +58,7 @@ ul li:hover > ul, ul li ul:hover
     visibility: visible;
     opacity: 1;
     transition: 3s;  /*появление меню за 3 секунды*/
+
     }
 
 ul li ul li
